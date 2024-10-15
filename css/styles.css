@@ -1,0 +1,376 @@
+/* Global Styles */
+
+/* Apply box-sizing to all elements to include padding and border in element's total width and height */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Style for the body element */
+body {
+  font-family: Arial, sans-serif; /* Set a readable font */
+  font-size: 16px; /* Set the base font size */
+  line-height: 1.5; /* Increase line height for readability */
+  color: #fffcfc; /* Set the text color */
+}
+
+/* Style for links */
+a {
+  text-decoration: none; /* Remove default underline */
+  color: #337ab7; /* Set link color */
+}
+
+/* Style for links on hover */
+a:hover {
+  color: #23527c; /* Change link color on hover */
+}
+
+/* Header Styles */
+
+/* Style for header container */
+.arrange {
+  background-image: url("https://www.tripsavvy.com/thmb/VkL8HmumZQvMMF6zlkTYBR9Rlpg=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/car-traveling-along-winding-road--maui--hawaii--america--usa-737142515-9d7096b173654472968075d805273c8f.jpg");
+  background-repeat: no-repeat; /* Prevent background image from repeating */
+  background-size: cover; /* Cover the entire container with the background image */
+}
+
+/* Style for left section in the header */
+.left {
+  background-color: rgb(7, 7, 7); /* Dark background color */
+  margin-left: 25%; /* Align to the right */
+  line-height: 50px; /* Increase line height */
+  padding: 3%; /* Add padding around content */
+  margin-right: 20%; /* Align to the left */
+}
+
+/* Style for header banner */
+#banner {
+  background-color: #337ab7; /* Set background color */
+  color: #fff; /* Set text color */
+  padding: 5px; /* Add padding */
+  text-align: center; /* Center-align text */
+}
+
+/* Style for main header text */
+#banner h1 {
+  font-size: 50px; /* Large font size */
+  margin-bottom: 10px; /* Space below the header */
+  text-shadow: 5px 5px 5px black; /* Add shadow to text */
+}
+
+/* Style for secondary header text */
+#banner h3 {
+  font-size: 18px; /* Font size for secondary header */
+  margin-bottom: 20px; /* Space below the header */
+}
+
+/* Navigation Styles */
+
+/* Style for navigation container */
+#nav {
+  background-color: #333; /* Dark background color */
+  padding: 10px; /* Add padding */
+  text-align: center; /* Center-align navigation items */
+}
+
+/* Style for navigation list */
+#nav ul {
+  list-style: none; /* Remove default list styling */
+  margin: 0; /* Remove margin */
+  padding: 0; /* Remove padding */
+}
+
+/* Style for individual navigation items */
+#nav li {
+  display: inline-block; /* Display list items in a line */
+  margin-right: 20px; /* Space between items */
+}
+
+/* Style for navigation links */
+#nav a {
+  color: #fff; /* Set text color */
+  padding: 80px; /* Add padding */
+}
+
+/* Style for navigation links on hover */
+#nav a:hover {
+  color: #ef2020; /* Change color on hover */
+}
+
+/* Main Content Styles */
+
+/* Style for main content container */
+.main-content {
+  max-width: 800px; /* Limit width */
+  margin: 40px auto; /* Center align with margin */
+  padding: 20px; /* Add padding */
+  background-color: #fff; /* White background color */
+  border: 1px solid #ddd; /* Light border */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow */
+}
+
+/* Footer Styles */
+
+/* Style for footer */
+footer {
+  background-color: #333; /* Dark background color */
+  margin-top: 10%; /* Margin on top */
+  color: #fff; /* White text color */
+  padding: 10px; /* Add padding */
+  text-align: center; /* Center-align text */
+  clear: both; /* Clear floats */
+}
+
+/* Responsive Design */
+
+/* Styles for screens smaller than 768px */
+@media (max-width: 768px) {
+  #nav {
+      padding: 5px; /* Reduce padding */
+  }
+  #nav li {
+      margin-right: 10px; /* Reduce space between items */
+  }
+  .main-content {
+      margin: 20px auto; /* Reduce margin */
+  }
+}
+
+/* Styles for screens smaller than 480px */
+@media (max-width: 480px) {
+  #banner {
+      padding: 10px; /* Reduce padding */
+  }
+  #banner h1 {
+      font-size: 24px; /* Reduce font size */
+  }
+  #nav {
+      padding: 0; /* Remove padding */
+  }
+  #nav li {
+      display: block; /* Stack items vertically */
+      margin-right: 0; /* Remove margin */
+  }
+  .main-content {
+      margin: 10px auto; /* Reduce margin */
+  }
+}
+
+/* Style for general container */
+.container {
+  color: black; /* Text color */
+  background-color: antiquewhite; /* Background color */
+  margin-left: 20%; /* Align to the center */
+  margin-right: 20%; /* Align to the center */
+  margin-top: 5%; /* Space from top */
+  text-align: center; /* Center-align text */
+  padding: 10px; /* Add padding */
+  padding-right: 5%; /* Additional padding on the right */
+  padding-left: 5%; /* Additional padding on the left */
+  border: 1px solid #ddd; /* Light border */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 0 10px rgba(0,0,0,0) /* Add shadow (none) */
+}
+
+/* Style for container with background color */
+.container1 {
+  background-color: #337ab7; /* Set background color */
+}
+
+/* Style for text with red color */
+.red {
+  color: red; /* Text color */
+  text-decoration-color: red; /* Text decoration color */
+}
+
+/* Style for tool section */
+.tool {
+  background-color: black; /* Background color */
+  color: white; /* Text color */
+  background-size: cover; /* Cover the entire container with background image */
+}
+
+/* Style for picture container */
+.picture {
+  display: flex; /* Use flexbox layout */
+  flex-wrap: wrap; /* Allow items to wrap */
+  justify-content: space-around; /* Distribute items evenly */
+}
+
+/* Style for pictures in the container */
+.picture img {
+  width: 250px; /* Set width */
+  height: 250px; /* Set height */
+  object-fit: cover; /* Cover the container without distortion */
+}
+
+/* Style for containing text below images */
+.contain {
+  font-size: 18px; /* Font size */
+  font-weight: bold; /* Bold text */
+  margin-top: 8%; /* Space above */
+  text-align: center; /* Center-align text */
+}
+
+/* Style for registration section */
+.register {
+  background-color: #337ab7; /* Background color */
+  height: 60%; /* Height */
+  width: 50%; /* Width */
+  padding: 5px; /* Padding */
+  margin-top: 20%; /* Space above */
+  margin-left: 30%; /* Align to the center */
+}
+
+/* Style for profile container */
+.profile {
+  display: flex; /* Use flexbox layout */
+  flex-wrap: wrap; /* Allow items to wrap */
+  justify-content: space-around; /* Distribute items evenly */
+  background-color: aquamarine; /* Background color */
+  background-size: cover; /* Cover the container with background image */
+}
+
+/* Style for individual profile items */
+.profile-item {
+  margin: 20px; /* Space around items */
+  text-align: center; /* Center-align text */
+}
+
+/* Style for profile images */
+.profile-item img {
+  width: 250px; /* Set width */
+  height: 350px; /* Set height */
+  object-fit: cover; /* Cover the container without distortion */
+}
+
+/* Style for profile text container */
+.person {
+  background-color: black; /* Background color */
+  font-weight: bolder; /* Bold text */
+  font-size: 20px; /* Font size */
+  padding: 10px; /* Padding */
+  border: 2px solid #000000; /* Border color */
+  border-radius: 10px; /* Rounded corners */
+  margin-top: 20px; /* Space above */
+  display: block; /* Display as block */
+}
+
+/* Style for profile image hover effect */
+.profile-item img:hover {
+  transform: scale(1.1); /* Scale up image */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4); /* Add shadow on hover */
+}
+
+/* Style for login form */
+.login-form {
+  width: 300px; /* Set width */
+  margin: 0 auto; /* Center-align */
+  padding: 20px; /* Add padding */
+  background-color: #ffa5a5; /* Background color */
+  border: 1px solid #b7b6b6; /* Border color */
+  border-radius: 4px; /* Rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow */
+  margin-top: 100px; /* Space from top */
+}
+
+/* Style for login form heading */
+.login-form h2 {
+  text-align: center; /* Center-align text */
+  margin-bottom: 20px; /* Space below */
+  color: #333; /* Text color */
+}
+
+/* Style for login form labels */
+.login-form label {
+  display: block; /* Display as block */
+  margin-bottom: 5px; /* Space below */
+}
+
+/* Style for email and password inputs */
+.login-form input[type="email"],
+.login-form input[type="password"] {
+  width: 100%; /* Full width */
+  padding: 8px; /* Padding */
+  border: 1px solid #f69898; /* Border color */
+  border-radius: 4px; /* Rounded corners */
+  box-sizing: border-box; /* Include padding and border in width */
+  margin-bottom: 10px; /* Space below */
+}
+
+/* Style for submit button */
+.login-form input[type="submit"] {
+  width: 100%; /* Full width */
+  padding: 8px; /* Padding */
+  background-color: #4CAF50; /* Background color */
+  color: #000000; /* Text color */
+  border: none; /* Remove border */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Style for submit button on hover */
+.login-form input[type="submit"]:hover {
+  background-color: #45a049; /* Darker background color on hover */
+}
+
+/* Style for back container */
+.back {
+  background-color: #000000; /* Background color */
+}
+
+/* Style for dashboard container */
+.dashboard {
+  object-fit: cover; /* Cover the container */
+  margin: 40px; /* Space around container */
+  margin-top: 10%; /* Space from top */
+  padding: 20px; /* Add padding */
+  background-color: black; /* Background color */
+  border: 1px solid #ddd; /* Border color */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow */
+}
+
+/* Style for logout form */
+.logout-form {
+  text-align: center; /* Center-align text */
+}
+
+/* Style for logout button */
+.logout-form input[type="submit"] {
+  background-color: #4CAF50; /* Background color */
+  color: #fff; /* Text color */
+  border: none; /* Remove border */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  padding: 10px 20px; /* Padding */
+}
+
+/* Style for logout button on hover */
+.logout-form input[type="submit"]:hover {
+  background-color: #45a049; /* Darker background color on hover */
+}
+
+/* Responsive design */
+
+/* Styles for screens smaller than 600px */
+@media (max-width: 600px) {
+  .dashboard {
+      margin: 20px auto; /* Reduce margin */
+      padding: 10px; /* Reduce padding */
+  }
+  .logout-form {
+      margin-top: 10px; /* Reduce space above */
+  }
+}
+
+/* Styles for screens smaller than 400px */
+@media (max-width: 400px) {
+  .dashboard {
+      margin: 10px auto; /* Reduce margin */
+      padding: 5px; /* Reduce padding */
+  }
+  .logout-form {
+      margin-top: 5px; /* Reduce space above */
+  }
+}
